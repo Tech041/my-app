@@ -15,7 +15,7 @@ const Card = ({ icon, title, desc }: Cardprops) => {
       </div>
       <h3 className="font-bold text-primary-300">{title}</h3>
       <p className="text-primary-300 text-center">{desc}</p>
-      <Link href="#" className="text-accent-300 underline cursor-pointer">
+      <Link href="/#about" className="text-accent-300 underline cursor-pointer">
         Learn More
       </Link>
     </div>

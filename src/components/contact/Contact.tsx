@@ -1,7 +1,41 @@
+"use client";
+import { useState } from "react";
 import React from "react";
 import Image from "next/image";
 
 const Contact = () => {
+  const [username, setUserName] = useState("");
+  const [email, setEmail] = useState("");
+  const [text, setText] = useState("");
+  const [inputName, setInputName] = useState("");
+  const [inputEmail, setInputEmail] = useState("");
+  const [inputText, setInputText] = useState("");
+  const handleSubmit = () => {
+    if (username == "") {
+      setInputName("Please enter your name!!!");
+    } else {
+      setInputName("");
+    }
+    if (email == "") {
+      setInputEmail("Please enter your email address!!");
+    } else {
+      setInputEmail("");
+    }
+    if (text == "") {
+      setInputText("Please send a message to us!!!");
+    } else {
+      setInputText("");
+    }
+    if (username && email && text) {
+      alert(
+        `Hello ${username} your request has been submitted successfully!!!`
+      );
+      setUserName("");
+      setEmail("");
+      setText("");
+    }
+  };
+
   return (
     <section className="w-full py-10" id="contact-us">
       <div className="container">
@@ -16,22 +50,35 @@ const Contact = () => {
         <div className="flex md:flex-row flex-col mt-5 gap-10">
           <div className="flex-1">
             <form className="flex flex-col gap-5">
+              <p className="text-red-500 py-1">{inputName}</p>
               <input
                 type="text"
                 placeholder="Name"
                 className="px-5 py-2 border-2"
+                value={username}
+                onChange={(e) => setUserName(e.target.value)}
               />
+              <p className="text-red-500 py-1">{inputEmail}</p>
               <input
                 type="email"
                 placeholder="Email"
                 className="px-5 py-2 border-2"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
+              <p className="text-red-500 py-1">{inputText}</p>
               <textarea
                 placeholder="Message..."
                 className="h-[100px] px-5 py-2 border-2 resize-none"
+                value={text}
+                onChange={(e) => setText(e.target.value)}
               ></textarea>
             </form>
-            <button className="font-bold px-7 mt-5 py-2 rounded-full cursor-pointer text-white bg-primary-400">
+            <button
+              onClick={handleSubmit}
+              type="submit"
+              className="font-bold px-7 mt-5 py-2 rounded-full cursor-pointer text-white bg-primary-400 hover:bg-primary-200"
+            >
               Submit
             </button>
           </div>

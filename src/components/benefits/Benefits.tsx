@@ -12,7 +12,7 @@ const Benefits = () => {
       id: 1,
       icon: <HiAcademicCap size={25} />,
       title: "Expert And Qualified Trainers",
-      desc: `We have best, skilled, and qualified trainers in Nelson's gym. We have trainers with 
+      desc: `We have best, skilled, and qualified trainers in Mikegym. We have trainers with 
       over 10 years of working, teaching
        and training experience.`,
     },
@@ -20,7 +20,7 @@ const Benefits = () => {
       id: 2,
       icon: <IoCalendarOutline size={25} />,
       title: "Flexible Workout Time",
-      desc: `Nelson's gym has one of the best flexible workout time schedule. We provide fitness services for our 
+      desc: `Mikegym  has one of the best flexible workout time schedule. We provide fitness services for our 
       members, base on their convinient time.`,
     },
     {

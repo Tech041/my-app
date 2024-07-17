@@ -18,15 +18,18 @@ const Hero = () => {
           Become a member
         </h3>
         <p className="mt-3 text-white text-center md:text-left">
-          {`Nelson's`} gym is the best gym in the city of Ibadan, we have
+          Mikegym is the best gym in the city of Lagos, we have
           <br className="hidden md:block" /> skillful and professional
           instructors.
         </p>
         <div className="mt-7 flex items-center flex-col md:flex-row gap-5">
-          <button className="px-10 py-2 rounded-full cursor-pointer text-white bg-primary-400">
+          <Link
+            href="/#contact-us"
+            className="px-10 py-2 rounded-full cursor-pointer text-white bg-primary-400 hover:bg-primary-300 hover:text-accent-300"
+          >
             Book Now
-          </button>
-          <Link href="#" className="underline text-accent-400">
+          </Link>
+          <Link href="/#about" className="underline text-accent-400">
             Learn More
           </Link>
         </div>
