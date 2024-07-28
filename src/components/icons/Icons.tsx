@@ -10,23 +10,28 @@ const Icons = () => {
   return (
     <div className="flex gap-5">
       <div className={iconsStyles}>
-        <Link href="/https://web.facebook.com/mandela.nelson.18062">
+        <Link
+          target="_blank"
+          href="https://web.facebook.com/mandela.nelson.18062"
+        >
           <FaFacebookF size={25} color="white" />
         </Link>
       </div>
       <div className={iconsStyles}>
-        <Link href="/https://x.com/lorenz_Scot">
-          {" "}
+        <Link target="_blank" href="https://x.com/lorenz_Scot">
           <GrTwitter size={25} color="white" />
         </Link>
       </div>
       <div className={iconsStyles}>
-        <Link href="/https://www.instagram.com/voyage_wears/">
+        <Link target="_blank" href="https://www.instagram.com/voyage_wears/">
           <FaSquareInstagram size={25} color="white" />
         </Link>
       </div>
       <div className={iconsStyles}>
-        <Link href="/https:www.linkedin.com/in/chinwuba-nelson-838206238">
+        <Link
+          target="_blank"
+          href="https:www.linkedin.com/in/chinwuba-nelson-838206238"
+        >
           <FaLinkedinIn size={25} color="white" />
         </Link>
       </div>
