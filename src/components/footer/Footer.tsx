@@ -54,7 +54,7 @@ const Footer = () => {
           &copy; All rights reserved.
         </h6>
         <h6 className="text-[14px] text-primary-300">
-          Pharm Chinwuba Nelson Chikamso Joshua
+          Pharm Chinwuba Nelson Chikamso
         </h6>
       </div>
     </footer>
