@@ -9,7 +9,7 @@ Features
 - User-friendly interface for easy navigation
 
 Technologies Used
-- Frontend: Next.js, Tailwind CSS
+- Frontend: Next.js, TypeScript and Tailwind CSS
 
 Getting Started
 1. Clone the repository
